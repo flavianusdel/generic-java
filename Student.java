@@ -12,17 +12,17 @@ public class Student<T> {
     public static void main(String[] args) {
         Student<Integer> studentAge = new Student<Integer>();
         Student<String> studentName = new Student<String>();
-        Student<Boolean> studentStatus = new Student<String>();
-        Student<Character> studentGrade = new Student<String>();
+        Student<Boolean> studentStatus = new Student<Boolean>();
+        Student<Character> studentGrade = new Student<Character>();
     
-        studentAge.add(new Integer(21));
-        studentName.add(new String("David Beckham"));
-        studentStatus.add(new Boolean(true));
-        studentGrade.add(new Character('A'));
+        studentAge.add(21);
+        studentName.add("David Beckham");
+        studentStatus.add(true);
+        studentGrade.add('A');
         
-        System.out.printf("Student Name    : %s\n\n", studentName.get());
+        System.out.printf("Student Name    : %s\n", studentName.get());
         System.out.printf("Student Age     : %d\n", studentAge.get());
-        System.out.printf("Student Status  : %s\n\n", studentStatus.get());
+        System.out.printf("Student Status  : %s\n", studentStatus.get());
         System.out.printf("Student Grade   : %c\n", studentGrade.get());
     }
 }
